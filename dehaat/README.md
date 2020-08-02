@@ -111,3 +111,5 @@ http://127.0.0.1:8000/payments/user/2/?to=1-1-2030&from=30-7-2020 GET `[{"id": 7
 5. In real world API for order confirmation, final locked price will come from the cart UI, as no UI exists, liberty taken to update the price based on product price existing just before purchase. The difference between the approaches is that if a user sees a price in cart UI and purchases, while an admin updates the product price a moment before, then the price last seen by user is no longer valid as the recorded price would be the updated price. We do not want that. Here, no such UI exists, so this problem won't arise.
 
 6. Read code comments.
+
+7. Two approaches for Product Storage described, simpler one used. MongoDB not used as I have not integrated Mongo with Django before.
